@@ -1,0 +1,22 @@
+<div>
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th> User name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Admin?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.FirstName + " " + LastNAme}}</td>
+      <td>{{ user.UserName }}</td>
+      <td>{{ user.Phone }}</td>
+      <td>{{ user.Email }}</td>
+      <td>{{ user.IsAdmin ? "Yes" : "No" }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
