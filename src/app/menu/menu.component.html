@@ -1,0 +1,7 @@
+<nav>
+<ul>
+  <li *ngFor="let menu of menus">
+    <a routerLink="{{menu.route}}" title="{{menu.tooltip}}"> {{menu.display}}</a>
+  </li>
+</ul>
+</nav>

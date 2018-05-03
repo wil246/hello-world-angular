@@ -7,6 +7,7 @@
       <th>Phone</th>
       <th>Email</th>
       <th>Admin?</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
@@ -16,6 +17,8 @@
       <td>{{ user.Phone }}</td>
       <td>{{ user.Email }}</td>
       <td>{{ user.IsAdmin ? "Yes" : "No" }}</td>
+        <td><a routerLink="/users/detail/{{user.ID}}">Detail</a></td>
+        <td><a routerLink="/users/edit/{{user.ID}}">Edit</a></td>
     </tr>
   </tbody>
 </table>

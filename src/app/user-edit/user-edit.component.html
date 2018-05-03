@@ -1,0 +1,47 @@
+<div class="container" *ngIf="user">
+
+<div class="input-group input-group-sm mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="firstName">First Name:</label>
+      </div>
+      <input [(ngModel)]="user.FirstName" name="firstName" type="test"
+        class="form-control" id="FirstName">
+    </div>
+  </div>
+<div class="input-group input-group-sm mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="lastName">Lirst Name:</label>
+    </div>
+    <input [(ngModel)]="user.lastName" name="lastName" type="test"
+      class="form-control" id="LasttName">
+  </div>
+  <div class="input-group input-group-sm mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="phone">Phone:</label>
+      </div>
+      <input [(ngModel)]="user.Phone" phone="phone" type="test"
+        class="form-control" id="Phonr">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="email">Email:</label>
+        </div>
+        <input [(ngModel)]="user.Email" name="Email" type="test"
+          class="form-control" id="Email">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="Isadmin">Admin?:</label>
+          </div>
+          <select [(ngModel)]="user.ISadmin" name="Isadmin" type="test"
+            class="form-control" id="IsAadmin">
+            <option [ngValue]= "true">Yes</option>
+            <option [ngValue]= "false">No</option>
+       </select>
+      
+      </div>
+        <button (click)="save()" class=btn btn btn-primary">Save</button>
+      </div>
+
+    </div>
+            
